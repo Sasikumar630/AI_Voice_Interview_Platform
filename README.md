@@ -41,7 +41,7 @@ VITE_GEMINI_API_KEY=your_api_key
 
 ## 🔗 Live Demo
 
-[AI Voice Interview Preparation]([https://lnkd.in/gQ_53-wD](https://ai-voice-interview-pre.netlify.app/login))
+[AI Voice Interview Preparation](https://ai-voice-interview-pre.netlify.app/login)
 
 ## 👨‍💻 Developer
 
