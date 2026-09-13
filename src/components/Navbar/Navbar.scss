@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 60px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #2563eb;
+  font-size: 28px;
+}
+
+/* Desktop */
+
+.desktop-menu {
+  display: flex;
+  gap: 35px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+  }
+
+  a:hover,
+  .active {
+    color: #2563eb;
+  }
+}
+
+.desktop-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn,
+.register-btn {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.login-btn {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.register-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-email {
+  color: #f97316;
+  font-weight: 600;
+}
+
+/* Mobile Icon */
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #2563eb;
+}
+
+/* Overlay */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 998;
+}
+
+/* Sidebar */
+
+.sidebar {
+
+  position: fixed;
+  top: 0;
+  left: -300px;
+
+  width: 280px;
+  height: 100vh;
+
+  background: white;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: .35s ease;
+
+  z-index: 999;
+}
+
+.sidebar.open{
+  left:0;
+}
+
+.sidebar-top{
+  margin-bottom:35px;
+}
+
+.close{
+
+  font-size:28px;
+  color:#2563eb;
+  cursor:pointer;
+  margin-bottom:25px;
+
+}
+
+.sidebar h3{
+
+  margin-bottom:10px;
+
+}
+
+.sidebar p{
+
+  color:#666;
+  word-break:break-word;
+  margin-bottom:25px;
+
+}
+
+.sidebar a{
+
+  text-decoration:none;
+  color:#333;
+
+  font-size:18px;
+
+  padding:14px 0;
+
+  transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+  color:#2563eb;
+
+}
+
+.sidebar-logout{
+
+  margin-top:100px;
+
+  border:none;
+
+  background:#ef4444;
+
+  color:white;
+
+  padding:12px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-weight: bold;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.desktop-menu,
+.desktop-buttons{
+
+display:none;
+
+}
+
+.menu-icon{
+
+display:block;
+
+}
+
+.navbar{
+
+padding:0 18px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+max-width:220px;
+
+line-height:1.2;
+
+}
+
+}
+
+/* Desktop Hide Sidebar */
+
+@media(min-width:769px){
+
+.sidebar,
+.overlay{
+
+display:none;
+
+}
+
+}

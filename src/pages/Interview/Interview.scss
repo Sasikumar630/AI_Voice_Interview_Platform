@@ -1,0 +1,248 @@
+.interview-setup {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 45px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+
+  > p {
+    text-align: center;
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+/* ================= Sections ================= */
+
+.difficulty,
+.question-count,
+.interview-type {
+  margin-bottom: 35px;
+
+  h3 {
+    margin-bottom: 18px;
+    color: #1f2937;
+    font-size: 22px;
+  }
+}
+
+/* ================= Difficulty ================= */
+
+.levels {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.levels button {
+  flex: 1;
+  min-width: 140px;
+  padding: 15px;
+  border: 2px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.levels button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.levels button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================= Select ================= */
+
+.question-count select {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.question-count select:focus {
+  border-color: #2563eb;
+}
+
+/* ================= Radio Buttons ================= */
+
+.interview-type {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.interview-type label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 17px;
+}
+
+.interview-type label:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.interview-type input {
+  transform: scale(1.2);
+  accent-color: #2563eb;
+}
+
+/* ================= Button ================= */
+
+.start-interview-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.start-interview-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.start-interview-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width: 992px) {
+
+  .interview-setup {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .interview-setup h1 {
+    font-size: 36px;
+  }
+
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 768px) {
+
+  .interview-setup {
+    width: 95%;
+    margin: 30px auto;
+    padding: 25px;
+  }
+
+  .interview-setup h1 {
+    font-size: 30px;
+  }
+
+  .interview-setup > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .difficulty h3,
+  .question-count h3,
+  .interview-type h3 {
+    font-size: 20px;
+  }
+
+  .levels {
+    flex-direction: column;
+  }
+
+  .levels button {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .question-count select {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .interview-type label {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .start-interview-btn {
+    font-size: 17px;
+    padding: 14px;
+  }
+
+}
+
+/* ================= Small Mobile ================= */
+
+@media (max-width: 480px) {
+
+  .interview-setup {
+    padding: 20px;
+  }
+
+  .interview-setup h1 {
+    font-size: 26px;
+  }
+
+  .interview-setup > p {
+    font-size: 15px;
+  }
+
+  .difficulty h3,
+  .question-count h3,
+  .interview-type h3 {
+    font-size: 18px;
+  }
+
+  .levels button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .question-count select {
+    font-size: 15px;
+  }
+
+  .interview-type label {
+    font-size: 15px;
+  }
+
+  .start-interview-btn {
+    font-size: 16px;
+  }
+
+}
